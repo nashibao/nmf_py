@@ -23,9 +23,11 @@ nmf.clusters()
  - scipy superpack
 
 #### setup
- - 1000000 x 10000 x 0.005 matrix
- - k=10
- - iter_num=100で
+
+ - sparse matrix size: 1000000 x 10000
+ - density: 0.005
+ - hidden variable num: 10
+ - iter_num: 100
 
  ->
-147.484 sec = 2.3 minutes
+`147.484` sec = `2.3` min
