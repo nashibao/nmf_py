@@ -7,9 +7,11 @@ This code is designed to handle large sparse matrix.
 
 ```python
 nmf = NMF()
+// random sparse matrix
 A = nmf.rand_sparse_matrix(100000, 1000, 0.01)
 nmf.setup(A, k=10)
 nmf.run(iter_num=100)
+// hard clustering
 nmf.clusters()
 ```
 ## performance
