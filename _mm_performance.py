@@ -62,12 +62,9 @@ def tests_sparse_matmul(A, vec):
     """
     print "compute.."
     t1 = time()
-    B = A * vec
-    C = B.dot(B.T)
-    print C.sum()
+    A * vec
     t2 = time()
     print "%8.3f sec" % (t2 - t1)
-
 
 
 if __name__ == "__main__":
