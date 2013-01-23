@@ -16,6 +16,12 @@
 #    0.437 sec
 # compute..
 #    0.067 sec
+# python mm_performance.py 100000 100000 0.0005
+# prepare..
+#    0.428 sec
+# 39.990176 Mbytes
+# compute..
+#    0.130 sec
 # python mm_performance.py 3000000 10000 0.005
 # prepare..
 #   34.109 sec
@@ -52,7 +58,7 @@ def prepare_matrices(l1=1000, l2=1000, alpha=0.1):
     #     A[i] = r[n]
     t2 = time()
     print "%8.3f sec" % (t2 - t1)
-
+    print "%f Mbytes" % ((float)(A.data.nbytes) / 1000000)
     return A
 
 
